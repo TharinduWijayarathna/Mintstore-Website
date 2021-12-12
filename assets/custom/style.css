@@ -1,0 +1,335 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("http://localhost/mintstore/assets/fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+    font-family: Honey Script;
+    src: url("font/HoneyScript-Light.ttf");
+}
+
+.logo{
+    height: 100px;
+    background-image: url("resources/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.title1{
+    font-family: "Honey Script";
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.title2{
+   
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.background{
+    background-image: url("http://localhost/mintstore/assets/images/svgs/admin.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.main-background{
+    background-image: url("resources/background-body.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.start-text-1{
+    font-size: 16px;
+}
+.start-text-2{
+    font-size: 16px;
+    font-weight: bold;
+}
+.cart-icon{
+    height: 32px;
+    background-image: url("resources/cartico.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.line-break-1{
+    border: solid;
+    border-color: silver;
+    border-width: 3px;
+}
+.search-line-image{
+    height: 80px;
+    background-image: url("resources/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.search-button{
+    height: 48px;
+}
+.advance-link{
+    text-decoration: none;
+    font-weight: bold;
+}
+.poster-images{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.poster-caption{
+    margin-bottom: 220px;
+}
+.poster-title{
+    font-size: 55px;
+    color: gray;
+}
+.poster-text{
+    font-size: 30px;
+    color: gray;
+}
+.poster-caption-1{
+    margin-bottom: 70px;
+    margin-right: 250px;
+}
+.link-2{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+.link-2:hover{
+    text-decoration: underline;
+}
+.link-3{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.link-3:hover{
+    text-decoration: underline;
+}
+.top-image-1{
+   height: 25vh;
+}
+.btn-text{
+    font-size: 12.56px;
+    display: inline;
+    width: 50%;
+}
+.label-head{
+    font-size: 20px;
+    font-weight: 800;
+}
+.category-down{
+    height: 40px;
+}
+.payment-1{
+    height: 75px;
+    background-image: url("http://localhost/mintstore/assets/images/payment_method_images/paypal_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.payment-2{
+    height: 75px;
+    background-image: url("http://localhost/mintstore/assets/images/payment_method_images/visa_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+.payment-3{
+    height: 75px;
+    background-image: url("http://localhost/mintstore/assets/images/payment_method_images/mastercard_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+.payment-4{
+    height: 75px;
+    background-image: url("http://localhost/mintstore/assets/images/payment_method_images/american_express_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+.text-area-back{
+    background-color: honeydew;
+}
+.product-image{
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-width: 2px;
+    border-color: blue;
+    border-radius: 8px;
+    border-style: solid;
+    
+}
+.side{
+    float: left;
+    width: 15%;
+
+}
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  .searchbtn1 {
+    width: 100%;
+}
+
+.singleproduct {
+    padding-top: 65px;
+    padding-bottom: 145px;
+    background-color: #e5e5e5;
+    padding: 20px;
+}
+
+.product_qty {
+    /* width: 105px; */
+    height: 50px;
+    padding-left: 8px;
+    padding-bottom: 15px;
+    margin-right: 22px;
+    margin-bottom: 11px;
+}
+
+.qty-buttons {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: solid 1px #e5e5e5;
+}
+
+.qty-inc {
+    padding-bottom: 2px;
+    justify-content: flex-end;
+    border-top-right-radius: 5px;
+}
+
+.qty-inc,
+.qty-dec {
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.qty-dec {
+    padding-bottom: 2px;
+    justify-content: flex-end;
+    border-bottom-right-radius: 5px;
+}
+.main-imageflex{
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.singleproduct {
+    padding-top: 65px;
+    padding-bottom: 145px;
+    background-color: #e5e5e5;
+    padding: 20px;
+}
+
+.product_qty {
+    /* width: 105px; */
+    height: 50px;
+    padding-left: 8px;
+    padding-bottom: 15px;
+    margin-right: 22px;
+    margin-bottom: 11px;
+}
+
+.qty-buttons {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: solid 1px #e5e5e5;
+}
+
+.qty-inc {
+    padding-bottom: 2px;
+    justify-content: flex-end;
+    border-top-right-radius: 5px;
+}
+
+.qty-inc,
+.qty-dec {
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.qty-dec {
+    padding-bottom: 2px;
+    justify-content: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+.emptyview {
+    background-image: url("resources/watchlistEmptyView.svg");
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.emtycart {
+    height: 400px;
+    background-image: url("resources/cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.cartqtytxt {
+    width: 100px;
+    height: 38px;
+    outline: none;
+}
+.btn-height{
+    height: 35px;
+}
+.invoiceheaderimg {
+    height: 80px;
+    background-image: url("resources/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.message-box,
+.chatbox {
+    height: 510px;
+    overflow-y: scroll;
+}
+.firstplace {
+    height: 90px;
+    background-image: url("resources/4640274_award_first_medal_place_premium_icon.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.addnewimg{
+    height: 50px;
+    background-image: url("resources/addnew.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 50%;
+}
