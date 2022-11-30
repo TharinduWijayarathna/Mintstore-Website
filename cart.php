@@ -165,8 +165,8 @@ if (isset($_SESSION["user"])) {
                                                             echo $con["name"]; 
                                                             ?>
                                                             <!-- </td> -->
-                                                            <td class="product_quantity"><label>Quantity</label> <input min="1" max="100" value="<?php echo $cr["qty"]; ?>" type="number" onchange="cartupdate(<?php echo $cr['id']?>);autoprice(<?php echo $cr['id']?>);autosubtotal();autototal();" id="qtyup<?php echo $cr["id"];?>"></td>
-                                                            <td class="product_total" id="price<?php echo $cr["id"]?>" >Rs.<?php echo ($pr["price"] * $cr["qty"]) + $shipping; ?>.00</td>
+                                                            <td class="product_quantity"><label>Quantity</label> <input min="1" max="100" value="<?php echo $cr["qty"]; ?>" type="number" onchange="cartupdate(<?php echo $cr['id']?>);autoprice(<?php echo $cr['id']?>);" id="qtyup<?php echo $cr["id"];?>"></td>
+                                                            <td class="product_total" id="price<?php echo $cr["id"]?>" >Rs.<?php echo ($pr["price"] * $cr["qty"]); ?>.00</td>
                                                             
                                                         </tr> <!-- End Cart Single Item-->
                                                     <?php
@@ -182,13 +182,23 @@ if (isset($_SESSION["user"])) {
                             </div>
                         </div>
                     </div> <!-- End Cart Table -->
+                    
 
                     <!-- Start Coupon Start -->
                     <div class="coupon_area">
                         <div class="container">
                             <div class="row">
-
-                                <div class="col-lg-12 col-md-12">
+                            <div class="col-lg-6 col-md-6">
+                        <div class="coupon_code left" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Coupon</h3>
+                            <div class="coupon_inner">
+                                <p>Enter your coupon code if you have one.</p>
+                                <input class="mb-2" placeholder="Coupon code" type="text">
+                                <button type="submit" class="btn btn-md btn-golden">Apply coupon</button>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="col-lg-6 col-md-6">
                                     <div class="coupon_code right" data-aos="fade-up" data-aos-delay="400">
                                         <h3>Cart Totals</h3>
                                         <div class="coupon_inner">

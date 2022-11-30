@@ -1579,6 +1579,8 @@ function cartupdate(id) {
 }
 function autoprice(id) {
   var price = document.getElementById("price" + id);
+  var tag = document.getElementById("sub");
+  var total = document.getElementById("tot");
 
   var f = new FormData();
   f.append("id", id);
@@ -1587,8 +1589,15 @@ function autoprice(id) {
 
   r.onreadystatechange = function () {
     if (r.readyState == 4) {
+
+     
       var t = r.responseText;
-      price.innerHTML = t;
+
+      var obj = JSON.parse(t);
+
+      price.innerHTML = "Rs." + obj["total"] + ".00";
+      tag.innerHTML = "Rs." + obj["sub"] + ".00";
+      total.innerHTML = "Rs." + obj["totupdate"] + ".00";
     }
   };
 
@@ -1596,36 +1605,36 @@ function autoprice(id) {
   r.send(f);
 }
 
-function autosubtotal() {
-  var tag = document.getElementById("sub");
+// function autosubtotal() {
+//   var tag = document.getElementById("sub");
 
-  var r = new XMLHttpRequest();
+//   var r = new XMLHttpRequest();
 
-  r.onreadystatechange = function () {
-    if (r.readyState == 4) {
-      var t = r.responseText;
-      tag.innerHTML = t;
-    }
-  };
+//   r.onreadystatechange = function () {
+//     if (r.readyState == 4) {
+//       var t = r.responseText;
+//       tag.innerHTML = t;
+//     }
+//   };
 
-  r.open("GET", "autosubtotalload.php", true);
-  r.send();
-}
-function autototal() {
-  var tag = document.getElementById("tot");
+//   r.open("GET", "autosubtotalload.php", true);
+//   r.send();
+// }
+// function autototal() {
+//   var tag = document.getElementById("tot");
 
-  var r = new XMLHttpRequest();
+//   var r = new XMLHttpRequest();
 
-  r.onreadystatechange = function () {
-    if (r.readyState == 4) {
-      var t = r.responseText;
-      tag.innerHTML = t;
-    }
-  };
+//   r.onreadystatechange = function () {
+//     if (r.readyState == 4) {
+//       var t = r.responseText;
+//       tag.innerHTML = t;
+//     }
+//   };
 
-  r.open("GET", "carttotalupdate.php", true);
-  r.send();
-}
+//   r.open("GET", "carttotalupdate.php", true);
+//   r.send();
+// }
 function linkItems() {
   var brn = document.getElementById("brnselect");
   var mod = document.getElementById("modSelect");
